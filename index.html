@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berisvil Mauricio</title>
+    <link rel="icon" href="./img\icono50x50.png">
+    
+  <!--Link stilo css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'portfolioapp\css\bootstrap.min.css'%}">
+  
+  <style>
+    body {
+      transition: background-color 0.3s ease;
+    }
+
+    /* Estilos para el tema oscuro */
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Estilos para el botón */
+    #dark-mode-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      background-color: #fff;
+      color: #333;
+      border-radius: 5px;
+      outline: none;
+    }
+  </style>
+    
+</head>
+ 
+  <body>
+
+    <!--Header/ encabezado-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+        <div class="container">
+          <a class="navbar-brand" style="width:'25px'" href="#"><img src='./img\icono50x50.png' alt="">   Mauricio Berisvil</a>
+        </div>
+        <button id="dark-mode-toggle">Cambiar Tema</button>
+      </nav>
+
+      <div class="container">
+        <br><br><br>
+        <div class="row">
+          <div class="col-lg-6">
+            <div>
+              <br><br><br>
+              <h4>Sobre Mi</h4>
+              <h2 style="font-weight: bold"><em>Hola, soy Mauricio.</em></h2>
+              <p>Tengo 29 años y soy de Córdoba, Argentina. Me forme profesionalmente como técnico en desarrollo de software
+                 y actualmente me encuento trabajando en el área de sistemas como gestor de incidentes y servicios del Banco de la Provincia de Córdoba.
+              </p>
+              <p>Con el objetivo de crecer profesionalmente y ampliar mis conocimientos,
+                estos últimos años incursione en un nuevo lenguaje de programación, analisis de datos, entre otras.
+              </p>
+              <p>Creo firmemente que siempre se debe buscar salir de la zona de confort,
+                enfrentando miedos y creciendo personal y profesionalmente en el camino. 
+              </p>
+              <p>¡Soy trabajador, curioso, apasionado, comprometido y aprendo rápido,
+                 por lo que me considero una pieza valiosa para tu equipo de trabajo!</p>
+                 <div class="row row-cols-6">
+                  <div class="col" >
+                    <h4 style="font-weight: bold">Enlaces</h4>
+                  </div>
+                  <div class="col" style="text-aling:left">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" style="display: inline-block; outline: none; color: black; text-decoration:none" href="https://www.linkedin.com/in/berisvilmauricio/">&nbsp;&nbsp;&nbsp;<em>Linkedin</em></a>
+                   <!-- <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" style="display: inline-block; outline: none; color: black; text-decoration:none"  href="">&nbsp;&nbsp;&nbsp;<em>GitHub</em></a>-->
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" style="display: inline-block; outline: none; color: black; text-decoration:none" href="./pdf/cv.pdf">&nbsp;&nbsp;&nbsp;<em>CV</em></a>
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" style="display: inline-block; outline: none; color: black;text-decoration:none" href="mailto:berisvilmauricio@gmil.com">&nbsp;&nbsp;&nbsp;<em>berisvilmauricio@gmail.com</em></a>
+                  </div>
+                  <div class="col">
+                  </div>
+                  <div class="col">
+                  </div>
+                  <div class="col">
+                </div>
+              </div>
+    
+            </div>
+            <!--<table class="table table-responsive">
+              <thead class="thead-dark " >
+                <tr>
+                    <th>Enlaces</th>
+                </tr>
+            </thead>
+            <tr>
+              <td><a href="">Linkedin</a><br>
+              <a href="">GitHub</a><br>
+              <a href="">Instagram</a></td>
+            </tr>
+            </table>-->
+          </div>
+        
+          <div class="col-lg-6">
+            <div class="banner_content">
+              <div class='home_right_img'>
+                <br>
+                <img src=".\img\personal1.png" style=" border-radius: 5em 2px 5em 2px;" class="img-fluid" alt="Responsive image">
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Script JS-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="{% static 'portfolioapp\js/bootstrap.bundle.min.js'%}" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="{% static 'portfolioapp\js/bootstrap.min.js'%}"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Botón de Traducción -->
+  
+  <script>
+    // Obtén el botón y el body del documento
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    // Añade un evento al botón para cambiar el tema
+    darkModeToggle.addEventListener('click', () => {
+      // Toggle de la clase 'dark-mode' en el body
+      body.classList.toggle('dark-mode');
+
+      // Guarda el estado actual del tema en el almacenamiento local
+      const isDarkMode = body.classList.contains('dark-mode');
+      localStorage.setItem('dark-mode', isDarkMode);
+    });
+
+    // Verifica el estado del tema al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+      const isDarkMode = localStorage.getItem('dark-mode') === 'true';
+
+      if (isDarkMode) {
+        body.classList.add('dark-mode');
+      }
+    });
+  </script>
+
+</body>
+</html>
