@@ -10,46 +10,22 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="{% static 'portfolioapp\css\bootstrap.min.css'%}">
   
-  <style>
-    body {
-      transition: background-color 0.3s ease;
-    }
-
-    /* Estilos para el tema oscuro */
-    body.dark-mode {
-      background-color: #333;
-      color: #fff;
-    }
-
-    /* Estilos para el botón */
-    #dark-mode-toggle {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      padding: 10px;
-      cursor: pointer;
-      border: none;
-      background-color: #fff;
-      color: #333;
-      border-radius: 5px;
-      outline: none;
-    }
-  </style>
-    
 </head>
  
   <body>
 
     <!--Header/ encabezado-->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-        <div class="container">
-          <a class="navbar-brand" style="width:'25px'" href="#"><img src='./img\icono50x50.png' alt="">   Mauricio Berisvil</a>
+    <!--<nav class="navbar navbar-expand-lg navbar-light fixed-top">-->
+    
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top" style="font-size: 12px;">
+        <div class="container" >
+          <a class="navbar-brand" id="navScroll" style="width:'25px';" href="#"><img src="./img/profile-pic.jpg" class="rounded-circle" style="width: 55px; height: 55px;">   Mauricio Berisvil</a>
         </div>
-        <!--<button id="dark-mode-toggle">Cambiar Tema</button>-->
       </nav>
+      
+    <!-- Section: Container --> 
 
-      <div class="container">
+      <section class="container">
         <br><br><br>
         <div class="row">
           <div class="col-lg-6">
@@ -68,48 +44,188 @@
               </p>
               <p>¡Soy trabajador, curioso, apasionado, comprometido y aprendo rápido,
                  por lo que me considero una pieza valiosa para tu equipo de trabajo!</p>
-                 <div class="row row-cols-6">
-                  <div class="col" >
+                <div class="row row-cols-6">
+                  <!--<div class="col" >
                     <h4 style="font-weight: bold">Enlaces</h4>
-                  </div>
-                  <div class="col" style="text-aling:left">
+                  </div>-->
+                  <!--<div class="col" style="text-aling:left">
                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" style="display: inline-block; outline: none; color: black; text-decoration:none" href="https://www.linkedin.com/in/berisvilmauricio/">&nbsp;&nbsp;&nbsp;<em>Linkedin</em></a>
-                   <!-- <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" style="display: inline-block; outline: none; color: black; text-decoration:none"  href="">&nbsp;&nbsp;&nbsp;<em>GitHub</em></a>-->
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" style="display: inline-block; outline: none; color: black; text-decoration:none"  href="">&nbsp;&nbsp;&nbsp;<em>GitHub</em></a>
                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" style="display: inline-block; outline: none; color: black; text-decoration:none" href="./pdf/cv.pdf">&nbsp;&nbsp;&nbsp;<em>CV</em></a>
                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" style="display: inline-block; outline: none; color: black;text-decoration:none" href="mailto:berisvilmauricio@gmil.com">&nbsp;&nbsp;&nbsp;<em>berisvilmauricio@gmail.com</em></a>
-                  </div>
+                  </div>-->
                   <div class="col">
                   </div>
                   <div class="col">
                   </div>
                   <div class="col">
+                  </div>
                 </div>
-              </div>
     
             </div>
-            <!--<table class="table table-responsive">
-              <thead class="thead-dark " >
-                <tr>
-                    <th>Enlaces</th>
-                </tr>
-            </thead>
-            <tr>
-              <td><a href="">Linkedin</a><br>
-              <a href="">GitHub</a><br>
-              <a href="">Instagram</a></td>
-            </tr>
-            </table>-->
           </div>
         
           <div class="col-lg-6">
-            <div class="banner_content">
-              <div class='home_right_img'>
+            <div class="banner_content rounded-top-left" >
+              <div class='home_center_img' style="max-width: 1600px; display: block; margin-top: 50px;">
                 <br>
-                <img src=".\img\personal1.png" style=" border-radius: 5em 2px 5em 2px;" class="img-fluid" alt="Responsive image">
+                <img src=".\img\personal1.jpeg" style="max-width: 100%;display: block;position: static; border-radius: 7em 1em 7em 1em" class="img-fluid"  alt="Responsive image">
+              </div>
+
+               <div class="row">
                </div>
             </div>
           </div>
         </div>
+
+
+
+      </section>
+
+    <!-- Section: End Container -->
+
+      <br><br>
+      
+
+      <!-- Section: Tecnologias -->
+
+
+      <section class="container">
+        <div class="row align-items-center">
+          <h4 style="font-weight: bold; font-size: 18px;">Tecnologías</h4>
+          <p class="hero-section-paragraph text-lg md:text-x1" style="text-decoration: solid; font-size: 16px; ">
+            Python 
+            <i class="fa-brands"><img src="./img/icon/icons8-python-48.png" style="height: 25px; width: 25px;" alt=""></i> |
+            Django 
+            <i class="fa-brands"><img src="./img/icon/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-48.png" style="height: 25px; width: 25px;" alt=""></i> |
+            SQL 
+            <i class="fa-solid "><img src="./img/icon/icons8-database-administrator-48.png" style="height: 25px; width: 25px;" alt=""></i> |
+            Power BI 
+            <i class="fa-solid "><img src="./img/icon/icons8-analytics-48.png" style="height: 25px; width: 25px;" alt=""></i> |
+            
+          </p>
+          <p class="hero-section-paragraph text-lg md:text-x1" style="text-decoration: solid; font-size: 16px; ">
+            Bootstrap 
+            <i class="fa-brands "><img src="./img/icon/icons8-bootstrap-48.png" style="height: 25px; width: 25px;" alt=""></i> |
+            Html5
+            <i class="fa-brands"><img src="./img/icon/icons8-html5-48.png" style="height: 25px; width: 25px;" alt=""></i> |
+            CSS3
+            <i class="fa-brands"><img src="./img/icon/icons8-css3-48.png" style="height: 25px; width: 25px;" alt=""></i> |
+            Visual Studio Code 
+            <i class="fa-solid"><img src="./img/icon/icons8-visual-studio-code-48.png" style="height: 25px; width: 25px;" alt=""></i> |
+          </p>
+          </div>
+        </div>
+      </section>
+    <!-- Section: End Tecnologias -->  
+
+    <br>
+
+    <!-- Section: Proyect´s -->
+    <!--<section class="container">
+    <div class="container align-items-center col-m-6">
+      <h4 style="font-weight: bold; font-size: 18px;">Proyectos</h4>
+      <br>
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/comingsoon.png.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <a href="" class="card-link"></a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/comingsoon.png.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <a href="" class="card-link"></a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/comingsoon.png.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <a href="" class="card-link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>-->
+    <!-- Section: End Proyect´s -->
+
+
+    <!-- Section: Fotter -->
+
+
+
+        <section class="chakra-stack css-15w9m1q">
+
+          <br><br><br><br>
+          <!--<a target="_blank" rel="noopener" class="chakra-link css-gwimq" style="display: inline-block; outline: none; color: black; text-decoration:none; text-align:left;">
+            <div class="css-1c2bf3b">
+              © 2020-2024 
+              <span class="chakra-text css-9psg8f">Berisvil Mauricio</span>
+               v1.
+            </div>
+
+          <div class="text-right">
+            <i class="fa-brands" >
+              <img src="./img/icon/icons8-email-48.png" style="height: 15px; width: 15px;" alt="">
+                berisvilmauricio@gmail.com &nbsp;</i>
+              </div>
+          </a>-->
+        </Section>
+
+        <!-- Section: Copyright -->
+
+        <section class="p-3 pt-0 expand-lg fotter-light bg-light fixed-bottom shadow" >
+          <div class="row d-flex align-items-center">
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <!-- Copyright -->
+              <div class="p-3" style="font-size: 10px;"">
+                <i class="fa-brands align-items-center" style="font-size: 11px;">
+                  <img src="./img/icon/icons8-email-48.png" style="height: 15px; width: 15px; " alt="">
+                   | berisvilmauricio@gmail.com</i> <br> 
+                © 2020 Copyright:
+                <a class="text-black" style="font-size: 10px; display: inline-block; outline: none; color: black; text-decoration:none"  href="https://berisvilmauricio.ar/">
+                  Berisvil Mauricio | v1.1 <br>
+                  </a>
+              </div>
+            <!-- Copyright -->
+            </div>
+  
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <!-- GitHub -->
+              <a class="btn btn-outline-light btn-floating m-1" class="text-white"role="button" href="https://github.com/MBerisvil" target="_blank">
+                 <i class="fa-brands "><img src="./img/icon/icons8-github-48 (1).png" style="height: 20px; width: 20px;" alt=""></i>
+              </a>
+
+              <!-- Linkedin -->
+              <a class="btn btn-outline-light btn-floating m-1" class="text-white"role="button" href="https://www.linkedin.com/in/berisvilmauricio/" target="_blank">
+                <i class="fa-brands" ><img src="./img/icon/icons8-linkedin-48.png" style="height: 20px; width: 20px;" alt="" ></i>
+              </a>
+              
+              <!-- Curriculum vitae -->
+              <a class="btn btn-outline-light btn-floating m-1" class="text-white"role="button" href="../Web - mb v1.0/pdf/cv.pdf" target="_blank">
+                <i class="fa-solid"><img src="./img/icon/icons8-document-48.png" style="height: 20px; width: 20px;" alt="" ></i>
+              </a>
+  
+            </div>
+            <!-- Grid column -->
+          </div>
+        </section>
+        <!-- Section: Copyright -->
+
+    <!-- Section: End Fotter -->
+
       </div>
 
 
@@ -118,32 +234,9 @@
       <script src="{% static 'portfolioapp\js/bootstrap.bundle.min.js'%}" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="{% static 'portfolioapp\js/bootstrap.min.js'%}"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--<script src="https://kit.fontawesome.com/579792ecd8.js" crossorigin="anonymous"></script>-->
   <!-- Botón de Traducción -->
-  
-  <script>
-    // Obtén el botón y el body del documento
-    const darkModeToggle = document.getElementById('dark-mode-toggle');
-    const body = document.body;
-
-    // Añade un evento al botón para cambiar el tema
-    darkModeToggle.addEventListener('click', () => {
-      // Toggle de la clase 'dark-mode' en el body
-      body.classList.toggle('dark-mode');
-
-      // Guarda el estado actual del tema en el almacenamiento local
-      const isDarkMode = body.classList.contains('dark-mode');
-      localStorage.setItem('dark-mode', isDarkMode);
-    });
-
-    // Verifica el estado del tema al cargar la página
-    document.addEventListener('DOMContentLoaded', () => {
-      const isDarkMode = localStorage.getItem('dark-mode') === 'true';
-
-      if (isDarkMode) {
-        body.classList.add('dark-mode');
-      }
-    });
-  </script>
+  <button id="dark-mode-toggle" class="btn btn-primary" onclick="toggleDarkMode()">
 
 </body>
 </html>
