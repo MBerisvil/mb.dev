@@ -234,9 +234,17 @@
       <script src="{% static 'portfolioapp\js/bootstrap.bundle.min.js'%}" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="{% static 'portfolioapp\js/bootstrap.min.js'%}"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      
   <!--<script src="https://kit.fontawesome.com/579792ecd8.js" crossorigin="anonymous"></script>-->
   <!-- Botón de Traducción -->
   <button id="dark-mode-toggle" class="btn btn-primary" onclick="toggleDarkMode()">
+    
+  <!-- Desactivar boton izquierdo de la pantalla -->
+  <script type="text/javascript" language="Javascript">
+    document.oncontextmenu = function(){return false}
+    </script>
+
 
 </body>
 </html>
+
